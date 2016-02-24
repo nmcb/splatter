@@ -2,6 +2,7 @@ val ProjectName      = "splatter"
 val OrganisationName = "splatter"
 val ProjectVersion   = "0.0.1"
 
+val AkkaVersion      = "2.4.0"
 val ScalaVersion     = "2.11.7"
 val JavaVersion      = "1.8.0_66"
 
@@ -16,7 +17,9 @@ lazy val root = (project in file("."))
   .settings(
     name := ProjectName,
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "2.2.6" % "test"
+      "com.typesafe.akka"	%% "akka-cluster"  % AkkaVersion,
+      "com.typesafe.akka" %% "akka-testkit"  % AkkaVersion   % "test",
+      "org.scalatest"     %% "scalatest"     % "2.2.6"       % "test"
     )
   )
 
