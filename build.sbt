@@ -3,7 +3,7 @@ val OrganisationName = "splatter"
 val SplatterVersion  = "0.0.1"
 
 val AkkaVersion      = "2.4.0"
-val ScalaVersion     = "2.11.7"
+val ScalaVersion     = "2.11.8"
 val JavaVersion      = "1.8.0_66"
 
 def common: Seq[Setting[_]] = Seq(
